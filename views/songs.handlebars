@@ -5,6 +5,7 @@
       <th scope="col">Artist</th>
       <th scope="col">Title</th>
       <th scope="col">Rating</th>
+      <th scope="col">Favorite Song</th>
       <th scope="col">Favorite</th>
     </tr>
   </thead>
@@ -15,7 +16,8 @@
         <td>{{this.artist}}</td>
         <td>{{this.title}}</td>
         <td>{{this.rating}}</td>
-        <td><button class="fav-song">Favorite Song</button></td>
+        <td>{{this.favorite}}</td>
+        <td><button class="fav-song" data-id={{this.id}}>Favorite Song</button></td>
         </tr>
     {{/each}}
   </tbody>
